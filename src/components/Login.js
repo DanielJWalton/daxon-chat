@@ -1,12 +1,9 @@
 import React from "react";
 import { auth, provider } from "../firebase";
 import { Button } from "@material-ui/core";
-import { useAuthState } from "react-firebase-hooks/auth";
 import styled from "styled-components";
 
 function Login() {
-  const [user, loading, error] = useAuthState(auth);
-
   const signIn = (e) => {
     e.preventDefault();
     auth.signInWithPopup(provider).catch((error) => alert(error.message));

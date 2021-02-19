@@ -1,12 +1,10 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import { db } from "../firebase";
 import { useDispatch } from "react-redux";
 import { enterRoom } from "../features/appSlice";
 import styled from "styled-components";
 
 function SidebarOption({ Icon, title, id, addChannelOption }) {
-  const history = useHistory();
   const dispatch = useDispatch();
 
   const selectChannel = () => {
