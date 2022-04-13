@@ -1,12 +1,12 @@
-import firebase from "firebase";
+import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCzV3WljQtjPAYlgyxWRNGiv7rOmGdVUZk",
-  authDomain: "slack-clone-redux-15927.firebaseapp.com",
-  projectId: "slack-clone-redux-15927",
-  storageBucket: "slack-clone-redux-15927.appspot.com",
-  messagingSenderId: "122255352086",
-  appId: "1:122255352086:web:9c62851bff6a7eecc5b037",
+	apiKey: 'AIzaSyArQo-OuyifO8R-gP3DfyRaDfXnAUwI4OI',
+	authDomain: 'daxon-clone.firebaseapp.com',
+	projectId: 'daxon-clone',
+	storageBucket: 'daxon-clone.appspot.com',
+	messagingSenderId: '124594991049',
+	appId: '1:124594991049:web:3ae2480964bb2bb16e0218',
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
@@ -14,4 +14,4 @@ const db = firebaseApp.firestore();
 const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
 
-export { auth, provider, db };
+export {auth, provider, db};
