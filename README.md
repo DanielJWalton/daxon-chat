@@ -1,6 +1,6 @@
-clone 
-yarn 
-yarn start
+clone;
+yarn;
+yarn start;
 
 https://daxon-clone.web.app/
 
